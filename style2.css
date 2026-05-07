@@ -1,0 +1,219 @@
+
+* {
+  	margin: 0;
+  	padding: 0;
+  	box-sizing: border-box;
+}
+
+body {
+  	display: flex;
+  	flex-direction: column; 
+  	min-height: 100vh;
+  	background: url("images/turr.jpg") no-repeat center center fixed; 
+  	background-size: cover;
+  	color: #222;
+  	margin: 0;
+}
+
+
+header {
+  	background-color: #850101;
+  	color: white;
+  	text-align: center;
+  	padding: 25px;
+  	font-size: 1.3em;
+}
+
+
+
+.full {
+  	display: flex;
+  	flex: 1; 
+  	background-color: rgba(244,244,244,0.6);
+}
+
+
+
+nav {
+  	flex: 0 0 200px; 
+  	background-color: #333;
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: flex-start;
+  	padding-top: 20px;
+}
+
+ul.navigation {
+  	list-style-type: none;
+}
+
+ul.navigation li {
+  	margin-bottom: 5px;
+}
+
+ul.navigation li a {
+  	display: block;
+  	color: white;
+  	text-decoration: none;
+  	padding: 14px 20px;
+  	transition: background 0.3s;
+}
+
+ul.navigation li a:hover {
+  	background-color: #575757;
+}
+
+
+.main-content {
+  	flex: 1;
+  	padding: 25px;
+  	background-color: rgba(244, 244, 244, 0.6);
+  	overflow-y: auto;
+  	font-size: 17px;
+}
+
+.main-content h4 {
+  	color: #850101;
+  	margin-top: 25px;
+  	font-size: 1.2em;
+}
+
+.main-content p {
+  	margin-top: 10px;
+    	font-size: 17;
+}
+
+.footer {
+  	margin-top: auto;           
+  	background-color: #850101;
+  	color: white;
+  	text-align: center;
+  	padding: 10px;
+  	font-size: 16px;
+  	border-radius: 0;           
+  	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+.tea {
+  	width: 300px;
+  	float: left; 
+  	margin: 10px 10px 10px 10px;
+  	border-radius: 10px;
+  	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.dance {
+  	width: 300px;
+  	float: right; 
+  	margin: 10px 0 10px 20px;
+  	border-radius: 10px;
+  	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+
+aside {
+  	flex: 0 0 22%; 
+  	max-width: 300px; 
+  	background-color: rgba(244, 244, 244, 0.9);
+  	padding: 20px;
+  	box-sizing: border-box;
+  	display: flex;
+  	flex-direction: column;
+  	gap: 15px;
+  	border-left: 3px solid #b22222;
+}
+
+
+
+.sidebar-box {
+  	background-color: #fff;
+  	border-radius: 8px;
+  	box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  	padding: 15px;
+  	transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.sidebar-box:hover {
+  	background-color: #ffe4e1;
+  	transform: scale(1.03);
+}
+
+
+.sidebar-box h3 {
+ 	 margin-top: 0;
+  	color: #b22222;
+  	font-size: 1.1em;
+}
+
+.sidebar-box p {
+  	margin: 0;
+  	color: #333;
+  	font-size: 0.9em;
+}
+
+
+@media screen and (max-width: 900px) {
+  .full {
+    flex-direction: column;
+  }
+
+  nav {
+    	flex-direction: row;
+    	justify-content: center;
+    	flex-wrap: wrap;
+  }
+
+  ul.navigation li {
+    	display: inline-block;
+    	margin: 0 10px;
+  }
+
+  .tea {
+    	float: none;
+    	display: block;
+    	margin: 20px auto;
+    	width: 80%;
+  }
+}
+
+.imagee {
+  	display: flex;
+  	justify-content: space-between; 
+  	align-items: center;            
+  	gap: 15px;                      
+  	margin: 20px 0;                 
+}
+
+.images {
+  	width: 30%;                   
+  		border-radius: 10px;
+  	box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  	transition: transform 0.3s ease;
+}
+
+aside {
+  	display: flex;
+  	flex-direction: column;
+  	gap: 70px;
+}
+
+aside h2{
+  	text-align : center;
+  	padding: 20px;
+  	padding-bottom:0;
+}
+
+.sidebar {
+  	background-color: #fff;
+  	border-radius: 0;
+  		box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  	padding: 15px;
+  	transition: transform 0.2s ease, background 0.3s ease;
+  	border: 1px solid #ccc;
+}
+
+
+
+
+
